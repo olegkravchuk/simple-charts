@@ -1,0 +1,15 @@
+.idea
+venv
+/simple-charts-app/node_modules
+/simple-charts-app/.idea
+
+simplecharts.sqlite3
+
+/simple-charts-app/.env.local
+/simple-charts-app/.env.development.local
+/simple-charts-app/.env.test.local
+/simple-charts-app/.env.production.local
+
+/simple-charts-app/npm-debug.log*
+/simple-charts-app/yarn-debug.log*
+/simple-charts-app/yarn-error.log*
