@@ -8,12 +8,22 @@ class Company(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'Company'
+        verbose_name_plural = 'Companies'
+
 
 class Requester(models.Model):
     name = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'Requester'
+        verbose_name_plural = 'Requesters'
 
 
 class Department(models.Model):
@@ -22,12 +32,22 @@ class Department(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'Department'
+        verbose_name_plural = 'Departments'
+
 
 class Category(models.Model):
     name = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
 
 
 class Currency(models.Model):
@@ -36,12 +56,21 @@ class Currency(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = 'Currency'
+        verbose_name_plural = 'Currencies'
+
 
 class Status(models.Model):
     name = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'Status'
+        verbose_name_plural = 'Statuses'
 
 
 class Buyer(models.Model):
@@ -50,12 +79,22 @@ class Buyer(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'Buyer'
+        verbose_name_plural = 'Buyers'
+
 
 class RequestType(models.Model):
     name = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'Request type'
+        verbose_name_plural = 'Request types'
 
 
 class Saving(models.Model):
@@ -64,12 +103,22 @@ class Saving(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'Saving'
+        verbose_name_plural = 'Savings'
+
 
 class TypeOfSavings(models.Model):
     name = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'Type of saving'
+        verbose_name_plural = 'Type of savings'
 
 
 class Information(models.Model):
@@ -117,3 +166,7 @@ class Information(models.Model):
 
     def __str__(self):
         return self.request_number
+
+    class Meta:
+        verbose_name = 'Information'
+        verbose_name_plural = 'Informations'
