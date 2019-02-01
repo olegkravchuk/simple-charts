@@ -168,5 +168,6 @@ class Information(models.Model):
         return self.request_number
 
     class Meta:
+        ordering = ['request_date', 'request_number']
         verbose_name = 'Information'
         verbose_name_plural = 'Informations'
